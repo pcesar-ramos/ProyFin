@@ -1,0 +1,21 @@
+# # Función ReLU
+
+# In[1]:
+
+
+#Se importa numpy y matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+#Se define el rango de valores
+z = np.linspace(-10,10,100)
+
+def ReLU(z):
+    return z * (z > 0)
+
+#Se calcula la función ReLU a partir del rango de valores
+c = ReLU(z)
+
+#Se gráfica la función
+plt.plot(z,c)
